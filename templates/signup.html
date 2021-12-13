@@ -1,0 +1,33 @@
+<html>
+<body>
+  <a href='/'> home </a>
+  <br>
+  <form action="/addUser" method="post">
+    {% csrf_token %}
+    <div align="center">
+      <h2>สร้างโปรไฟล์</h2>
+        <label for = ""  >Username</label>
+        <input type="text" name="username">
+      <br><br>
+        <label for = ""  >Firstname</label>
+        <input type="text" name="firstname">
+      
+      <br><br>
+        <label for = ""  >Lastname</label>
+        <input type="text" name="lastname">
+     
+      <br><br>
+        <label for = ""  >Email</label>
+        <input type="text" name="email">
+      <br><br>
+        <label for = ""  >Password</label>
+        <input type="text" name="password">
+      <br><br>
+        <label for = ""  >Re-Password</label>
+        <input type="text" name="rePassword">
+      <br><br>
+      <input type="submit" value="Register">
+    </div>
+  </form>
+</body>
+</html>

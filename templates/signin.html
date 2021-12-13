@@ -1,0 +1,20 @@
+<html>
+<body>
+  <a href='/'> home </a>
+  <br>
+  <a href="/signup"> signup </a>
+  <form action="/siguinForm" method="post">
+    {% csrf_token %}
+    <div align="center">
+      <h2>เข้าสู่ระบบ</h2>
+        <label for = ""  >Username</label>
+        <input type="text" name="username">
+      <br><br>
+        <label for = ""  >Password</label>
+        <input type="text" name="password">
+      <br><br>
+      <input type="submit" value="Sign In">
+    </div>
+  </form>
+</body>
+</html>
